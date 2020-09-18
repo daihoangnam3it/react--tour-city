@@ -1,0 +1,54 @@
+@import "../../index.scss";
+
+
+
+.tour{
+  display: grid;
+  margin: 1rem;
+  padding: 10px;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  img{
+    width: 100%;
+  }
+}
+
+.img-container{
+  position: relative;
+
+  span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: $mainActive;
+    opacity: 0;
+    cursor: pointer;
+
+    transition: all .3s linear;
+  }
+
+  &:hover span{
+    opacity: 1;
+  }
+}
+
+.info-container{
+  
+  h2{
+    text-transform: uppercase;
+    color: $hoverNavlink;
+  }
+  h3{
+    color: $mainActive;
+  }
+  h5{
+    span{
+      cursor: pointer;
+    }
+    p{
+      color: $hoverNavlink;
+      transition: 5s linear;
+    }
+  }
+  
+}
